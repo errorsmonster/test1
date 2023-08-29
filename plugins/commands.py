@@ -317,7 +317,7 @@ async def start(client, message):
                     InlineKeyboardButton("⚠️ Hᴏᴡ Tᴏ Vᴇʀɪғʏ ⚠️", url='https://t.me/How_To_Download_Movies321')
                 ]]
                 await message.reply_text(
-                    text=f"<b>Hey {message.from_user.mention}, You are not verified !\nKindly verify to continue !</b>",
+                    text=f"<b>ʜᴇʟʟᴏ {message.from_user.mention}, ʏᴏᴜʀ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ,ᴘʟᴇᴀꜱᴇ ᴠᴇʀɪғʏ ɴᴏᴡ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ғᴏʀ ɴᴇxᴛ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ...</b>",
                     protect_content=True,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
@@ -381,7 +381,7 @@ async def start(client, message):
                     InlineKeyboardButton("⚠️ Hᴏᴡ Tᴏ Vᴇʀɪғʏ ⚠️", url='https://t.me/How_To_Download_Movies321')
                 ]]
                 await message.reply_text(
-                    text=f"<b>Hey {message.from_user.mention}, You are not verified !\nKindly verify to continue !</b>",
+                    text=f"<b>ʜᴇʟʟᴏ {message.from_user.mention}, ʏᴏᴜʀ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ,ᴘʟᴇᴀꜱᴇ ᴠᴇʀɪғʏ ɴᴏᴡ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ғᴏʀ ɴᴇxᴛ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ...</b>",
                     protect_content=True,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
@@ -441,7 +441,7 @@ async def start(client, message):
             InlineKeyboardButton("⚠️ Hᴏᴡ Tᴏ Vᴇʀɪғʏ ⚠️", url='https://t.me/How_To_Download_Movies321')
         ]]
         await message.reply_text(
-            text=f"<b>Hey {message.from_user.mention}, You are not verified !\nKindly verify to continue !</b>",
+            text=f"<b>ʜᴇʟʟᴏ {message.from_user.mention}, ʏᴏᴜʀ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ,ᴘʟᴇᴀꜱᴇ ᴠᴇʀɪғʏ ɴᴏᴡ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ғᴏʀ ɴᴇxᴛ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ...</b>",
             protect_content=True,
             reply_markup=InlineKeyboardMarkup(btn)
         )
