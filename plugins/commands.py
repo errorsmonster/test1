@@ -312,8 +312,10 @@ async def start(client, message):
             if f_caption is None:
                 f_caption = f"{' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files1.file_name.split()))}"
             if not await check_verification(client, message.from_user.id) and VERIFY == True:
-                loading_message = await message.reply("Please Wait Generating Link...")
+                loading_message = await message.reply("⋘Cʜᴇᴄᴋɪɴɢ Vᴇʀɪғɪᴄᴀᴛɪᴏɴ Sᴛᴀᴛᴜs⋙")
                 await asyncio.sleep(0.5)
+                await loading_message.edit_text("Ｐｌｅａｓｅ Ｗａｉｔ....")
+                # Prepare the inline keyboard
                 btn = [[
                     InlineKeyboardButton("⚡ Verify ⚡", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=")),
                     InlineKeyboardButton("⚠️ Hᴏᴡ Tᴏ Vᴇʀɪғʏ ⚠️", url='https://t.me/How_To_Download_Movies321')
@@ -323,6 +325,7 @@ async def start(client, message):
                     protect_content=True,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
+                # Delete the loading message
                 await loading_message.delete()
                 return
             msg = await client.send_cached_media(
@@ -379,8 +382,10 @@ async def start(client, message):
         pre, file_id = ((base64.urlsafe_b64decode(data + "=" * (-len(data) % 4))).decode("ascii")).split("_", 1)
         try:
             if not await check_verification(client, message.from_user.id) and VERIFY == True:
-                loading_message = await message.reply("Please Wait Generating Link...")
+                loading_message = await message.reply("⋘Cʜᴇᴄᴋɪɴɢ Vᴇʀɪғɪᴄᴀᴛɪᴏɴ Sᴛᴀᴛᴜs⋙")
                 await asyncio.sleep(0.5)
+                await loading_message.edit_text("Ｐｌｅａｓｅ Ｗａｉｔ....")
+                # Prepare the inline keyboard
                 btn = [[
                     InlineKeyboardButton("⚡ Verify ⚡", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=")),
                     InlineKeyboardButton("⚠️ Hᴏᴡ Tᴏ Vᴇʀɪғʏ ⚠️", url='https://t.me/How_To_Download_Movies321')
@@ -390,6 +395,7 @@ async def start(client, message):
                     protect_content=True,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
+                # Delete the loading message
                 await loading_message.delete()
                 return
             msg = await client.send_cached_media(
@@ -442,8 +448,10 @@ async def start(client, message):
     if f_caption is None:
         f_caption = f"@FilmymodMovies {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))}"
     if not await check_verification(client, message.from_user.id) and VERIFY == True:
-        loading_message = await message.reply("Please Wait Generating Link...")
+        loading_message = await message.reply("⋘Cʜᴇᴄᴋɪɴɢ Vᴇʀɪғɪᴄᴀᴛɪᴏɴ Sᴛᴀᴛᴜs⋙")
                 await asyncio.sleep(0.5)
+                await loading_message.edit_text("Ｐｌｅａｓｅ Ｗａｉｔ....")
+                # Prepare the inline keyboard
         btn = [[
             InlineKeyboardButton("⚡ Verify ⚡", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=")),
             InlineKeyboardButton("⚠️ Hᴏᴡ Tᴏ Vᴇʀɪғʏ ⚠️", url='https://t.me/How_To_Download_Movies321')
@@ -453,6 +461,7 @@ async def start(client, message):
             protect_content=True,
             reply_markup=InlineKeyboardMarkup(btn)
         )
+        # Delete the loading message
         await loading_message.delete()
         return
     msg = await client.send_cached_media(
