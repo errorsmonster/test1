@@ -319,6 +319,8 @@ async def start(client, message):
                 await message.reply_text(
                     text=f"<b>ʜᴇʟʟᴏ {message.from_user.mention}, ʏᴏᴜʀ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ,ᴘʟᴇᴀꜱᴇ ᴠᴇʀɪғʏ ɴᴏᴡ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ғᴏʀ ɴᴇxᴛ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ...</b>",
                     protect_content=True,
+                    await message.reply_photo(
+                    photo=VRFY_IMG,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
                 return
@@ -383,6 +385,8 @@ async def start(client, message):
                 await message.reply_text(
                     text=f"<b>ʜᴇʟʟᴏ {message.from_user.mention}, ʏᴏᴜʀ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ,ᴘʟᴇᴀꜱᴇ ᴠᴇʀɪғʏ ɴᴏᴡ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ғᴏʀ ɴᴇxᴛ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ...</b>",
                     protect_content=True,
+                    await message.reply_photo(
+                    photo=VRFY_IMG,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
                 return
@@ -443,6 +447,8 @@ async def start(client, message):
         await message.reply_text(
             text=f"<b>ʜᴇʟʟᴏ {message.from_user.mention}, ʏᴏᴜʀ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ,ᴘʟᴇᴀꜱᴇ ᴠᴇʀɪғʏ ɴᴏᴡ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ғᴏʀ ɴᴇxᴛ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ...</b>",
             protect_content=True,
+            await message.reply_photo(
+            photo=VRFY_IMG,
             reply_markup=InlineKeyboardMarkup(btn)
         )
         return
