@@ -311,17 +311,26 @@ async def start(client, message):
                     f_caption=f_caption
             if f_caption is None:
                 f_caption = f"{' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files1.file_name.split()))}"
-            if not await check_verification(client, message.from_user.id) and VERIFY == True:
-                btn = [[
-                    InlineKeyboardButton("⚡ Verify ⚡", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=")),
-                    InlineKeyboardButton("⚠️ Hᴏᴡ Tᴏ Vᴇʀɪғʏ ⚠️", url='https://t.me/How_To_Download_Movies321')
-                ]]
-                await message.reply_text(
-                    text=f"<b>ʜᴇʟʟᴏ {message.from_user.mention}, ʏᴏᴜʀ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ,ᴘʟᴇᴀꜱᴇ ᴠᴇʀɪғʏ ɴᴏᴡ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ғᴏʀ ɴᴇxᴛ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ...</b>",
-                    await message.reply_photo(
+            if not await check_verification(client, message.from_user.id) and VERIFY == True and user not in PREMIUM_USER:
+                loading_message = await message.reply("⋘Cʜᴇᴄᴋɪɴɢ Vᴇʀɪғɪᴄᴀᴛɪᴏɴ Sᴛᴀᴛᴜs⋙")
+                await asyncio.sleep(0.5)
+                await loading_message.edit_text("Ｐｌｅａｓｅ Ｗａｉｔ....")
+                # Prepare the inline keyboard
+                btn = [
+                    [
+                        InlineKeyboardButton("♻️ Vᴇʀɪғʏ ♻️", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=")),
+                        InlineKeyboardButton("⚠️ Hᴏᴡ Tᴏ Vᴇʀɪғʏ ⚠️", url='https://t.me/How_To_Download_Movies321')
+                    ]
+                ]
+
+                # Display the final verification message (as a new message)
+                await message.reply_photo(
                     photo=VRFY_IMG,
+                    caption=script.VERIFY_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
+                # Delete the loading message
+                await loading_message.delete()
                 return
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
@@ -376,17 +385,26 @@ async def start(client, message):
     if not files_:
         pre, file_id = ((base64.urlsafe_b64decode(data + "=" * (-len(data) % 4))).decode("ascii")).split("_", 1)
         try:
-            if not await check_verification(client, message.from_user.id) and VERIFY == True:
-                btn = [[
-                    InlineKeyboardButton("⚡ Verify ⚡", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=")),
-                    InlineKeyboardButton("⚠️ Hᴏᴡ Tᴏ Vᴇʀɪғʏ ⚠️", url='https://t.me/How_To_Download_Movies321')
-                ]]
-                await message.reply_text(
-                    text=f"<b>ʜᴇʟʟᴏ {message.from_user.mention}, ʏᴏᴜʀ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ,ᴘʟᴇᴀꜱᴇ ᴠᴇʀɪғʏ ɴᴏᴡ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ғᴏʀ ɴᴇxᴛ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ...</b>",
-                    await message.reply_photo(
+            if not await check_verification(client, message.from_user.id) and VERIFY == True and user not in PREMIUM_USER:
+                loading_message = await message.reply("⋘Cʜᴇᴄᴋɪɴɢ Vᴇʀɪғɪᴄᴀᴛɪᴏɴ Sᴛᴀᴛᴜs⋙")
+                await asyncio.sleep(0.5)
+                await loading_message.edit_text("Ｐｌｅａｓｅ Ｗａｉｔ....")
+                # Prepare the inline keyboard
+                btn = [
+                    [
+                        InlineKeyboardButton("♻️ Vᴇʀɪғʏ ♻️", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=")),
+                        InlineKeyboardButton("⚠️ Hᴏᴡ Tᴏ Vᴇʀɪғʏ ⚠️", url='https://t.me/How_To_Download_Movies321')
+                    ]
+                ]
+
+                # Display the final verification message (as a new message)
+                await message.reply_photo(
                     photo=VRFY_IMG,
+                    caption=script.VERIFY_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
+                # Delete the loading message
+                await loading_message.delete()
                 return
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
@@ -437,18 +455,27 @@ async def start(client, message):
             f_caption=f_caption
     if f_caption is None:
         f_caption = f"@FilmymodMovies {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))}"
-    if not await check_verification(client, message.from_user.id) and VERIFY == True:
-        btn = [[
-            InlineKeyboardButton("⚡ Verify ⚡", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=")),
-            InlineKeyboardButton("⚠️ Hᴏᴡ Tᴏ Vᴇʀɪғʏ ⚠️", url='https://t.me/How_To_Download_Movies321')
-        ]]
-        await message.reply_text(
-            text=f"<b>ʜᴇʟʟᴏ {message.from_user.mention}, ʏᴏᴜʀ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ,ᴘʟᴇᴀꜱᴇ ᴠᴇʀɪғʏ ɴᴏᴡ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ғᴏʀ ɴᴇxᴛ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ...</b>",
-            await message.reply_photo(
-            photo=VRFY_IMG,
-            reply_markup=InlineKeyboardMarkup(btn)
-        )
-        return
+    if not await check_verification(client, message.from_user.id) and VERIFY == True and user not in PREMIUM_USER:
+                loading_message = await message.reply("⋘Cʜᴇᴄᴋɪɴɢ Vᴇʀɪғɪᴄᴀᴛɪᴏɴ Sᴛᴀᴛᴜs⋙")
+                await asyncio.sleep(0.5)
+                await loading_message.edit_text("Ｐｌｅａｓｅ Ｗａｉｔ....")
+                # Prepare the inline keyboard
+                btn = [
+                    [
+                        InlineKeyboardButton("♻️ Vᴇʀɪғʏ ♻️", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=")),
+                        InlineKeyboardButton("⚠️ Hᴏᴡ Tᴏ Vᴇʀɪғʏ ⚠️", url='https://t.me/How_To_Download_Movies321')
+                    ]
+                ]
+
+                # Display the final verification message (as a new message)
+                await message.reply_photo(
+                    photo=VRFY_IMG,
+                    caption=script.VERIFY_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+                    reply_markup=InlineKeyboardMarkup(btn)
+                )
+                # Delete the loading message
+                await loading_message.delete()
+                return
     msg = await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
