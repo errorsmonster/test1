@@ -325,7 +325,7 @@ async def start(client, message):
 
                 # Display the final verification message (as a new message)
                 await message.reply_photo(
-                    photo="https://telegra.ph/file/8f300cc2166ae74cc6aee.jpg",
+                    photo="https://telegra.ph/file/949460a317433aad6412b.jpg",
                     caption=script.VERIFY_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
@@ -399,7 +399,7 @@ async def start(client, message):
 
                 # Display the final verification message (as a new message)
                 await message.reply_photo(
-                    photo="https://telegra.ph/file/8f300cc2166ae74cc6aee.jpg",
+                    photo="https://telegra.ph/file/949460a317433aad6412b.jpg",
                     caption=script.VERIFY_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
@@ -469,7 +469,7 @@ async def start(client, message):
 
                 # Display the final verification message (as a new message)
                 await message.reply_photo(
-                    photo="https://telegra.ph/file/8f300cc2166ae74cc6aee.jpg",
+                    photo="https://telegra.ph/file/949460a317433aad6412b.jpg",
                     caption=script.VERIFY_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
