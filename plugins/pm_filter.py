@@ -76,12 +76,11 @@ async def pm_text(bot, message):
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
     if user_id in ADMINS: return # ignore admins
     await message.reply_text(
-         text=f"<b>ʜᴇʏ {user} 😍 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ɪᴛ ɪɴ ᴏᴜʀ <a href=https://t.me/FilmymodMovies>ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ</a> ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 👇</b>",   
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/FilmymodMovies")]])
-    )
+         text=f"𝗛𝗲𝘆 {user} 😍 ,\n\n𝗬𝗮𝗵𝗮 𝗔𝗮𝗽 𝗠𝗼𝘃𝗶𝗲𝘀 𝗦𝗲𝗮𝗿𝗰𝗵 𝗻𝗵𝗶 𝗸𝗿 𝘀𝗮𝗸𝘁𝗲 𝗵𝗼. 𝗚𝗿𝗼𝘂𝗽 𝗺𝗲𝗶 𝗷𝗮𝗮𝗸𝗿 𝗠𝗼𝘃𝗶𝗲𝘀 𝗼𝗿 𝗪𝗲𝗯𝘀𝗲𝗿𝗶𝗲𝘀 𝗡𝗮𝗺𝗲 𝗧𝘆𝗽𝗲 𝗸𝗿𝗼 <a href=https://t.me/FilmymodMovies>ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 👇</a>",   
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/FilmymodMovies")]]))
     await bot.send_message(
         chat_id=LOG_CHANNEL,
-        text=f"<b>#𝐏𝐌_𝐌𝐒𝐆\n\nNᴀᴍᴇ : {user}\n\nID : {user_id}\n\nMᴇssᴀɢᴇ : {content}</b>"
+        text=f"<b>👻 ⚡ᴍᴏᴠɪᴇꜱ ꜱᴇᴀʀᴄʜ ʙᴏᴛ⚡ 𝐏𝐌_𝐌𝐒𝐆 👻\n\n📝ᴍᴇssᴀɢᴇ:-{content}\n\n👶🏻ʀᴇQᴜᴇꜱᴛᴇᴅ ʙʏ:-{user}\n\n🃏ᴜꜱᴇʀ ɪᴅ:-{user_id}</b>"
     )
 
 @Client.on_callback_query(filters.regex(r"^next"))
