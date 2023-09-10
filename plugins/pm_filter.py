@@ -213,7 +213,7 @@ async def next_page(bot, query):
                 ],
             )
             btn.insert(0,
-        [InlineKeyboardButton(text="𝐇𝐎𝐖 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃", url='https://t.me/How_To_Download_Movies321/14')]
+        [InlineKeyboardButton(text="🔮 𝐇𝐎𝐖 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 🔮", url='https://t.me/How_To_Download_Movies321/14')]
         )
     if not settings["button"]:
         cur_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
@@ -891,7 +891,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("Jᴏɪɴ ᴏᴜʀ Bᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ ᴍᴀʜɴ! 😒", show_alert=True)
+            await query.answer("𝗝𝗼𝗶𝗻 𝗠𝘆 𝗨𝗽𝗱𝗮𝘁𝗲 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 𝗙𝗶𝗿𝘀𝘁, 𝗧𝗵𝗲𝗻 𝗖𝗹𝗶𝗰𝗸 𝗧𝗿𝘆 𝗔𝗴𝗮𝗶𝗻 𝗕𝘂𝘁𝘁𝗼𝗻 ! 😒", show_alert=True)
             return
         ident, kk, file_id = query.data.split("#")
         await query.answer(url=f"https://t.me/{temp.U_NAME}?start={kk}_{file_id}")
@@ -1734,7 +1734,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text="𝐍𝐎 𝐌𝐎𝐑𝐄 𝐏𝐀𝐆𝐄𝐒 𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄",callback_data="pages")]
         )
         btn.insert(0,
-        [InlineKeyboardButton(text="𝐇𝐎𝐖 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃", url='https://t.me/How_To_Download_Movies321/14')]
+        [InlineKeyboardButton(text="🔮 𝐇𝐎𝐖 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 🔮", url='https://t.me/How_To_Download_Movies321/14')]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     cur_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
@@ -1869,9 +1869,12 @@ async def advantage_spell_chok(client, msg):
         gs_parsed = []
         if not g_s:
             reqst_gle = query.replace(" ", "+")
-            button = [[
-                       InlineKeyboardButton("Gᴏᴏɢʟᴇ", url=f"https://www.google.com/search?q={reqst_gle}")
-            ]]
+            reply_markup = InlineKeyboardMarkup([[
+            InlineKeyboardButton("🔍 𝐂𝐥𝐢𝐜𝐤 𝐓𝐨 𝐂𝐡𝐞𝐜𝐤 𝐒𝐩𝐞𝐥𝐥𝐢𝐧𝐠 ✅", url=f"https://www.google.com/search?q={reqst_gle}+movie")
+            ],[
+            InlineKeyboardButton("🔍 𝐂𝐥𝐢𝐜𝐤 𝐓𝐨 𝐂𝐡𝐞𝐜𝐤 𝐑𝐞𝐥𝐞𝐚𝐬𝐞 𝐃𝐚𝐭𝐞 📅", url=f"https://www.google.com/search?q={reqst_gle}+release+date")
+            ]]  
+            )
             if NO_RESULTS_MSG:
                 await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
             k = await msg.reply_photo(
@@ -1907,9 +1910,12 @@ async def advantage_spell_chok(client, msg):
         movielist = list(dict.fromkeys(movielist))  # removing duplicates
         if not movielist:
             reqst_gle = query.replace(" ", "+")
-            button = [[
-                       InlineKeyboardButton("Gᴏᴏɢʟᴇ", url=f"https://www.google.com/search?q={reqst_gle}")
-            ]]
+            reply_markup = InlineKeyboardMarkup([[
+            InlineKeyboardButton("🔍 𝐂𝐥𝐢𝐜𝐤 𝐓𝐨 𝐂𝐡𝐞𝐜𝐤 𝐒𝐩𝐞𝐥𝐥𝐢𝐧𝐠 ✅", url=f"https://www.google.com/search?q={reqst_gle}+movie")
+            ],[
+            InlineKeyboardButton("🔍 𝐂𝐥𝐢𝐜𝐤 𝐓𝐨 𝐂𝐡𝐞𝐜𝐤 𝐑𝐞𝐥𝐞𝐚𝐬𝐞 𝐃𝐚𝐭𝐞 📅", url=f"https://www.google.com/search?q={reqst_gle}+release+date")
+            ]]  
+            )
             if NO_RESULTS_MSG:
                 await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
             k = await msg.reply_photo(
@@ -1921,6 +1927,7 @@ async def advantage_spell_chok(client, msg):
             await k.delete()
             return
         SPELL_CHECK[mv_id] = movielist
+        movielist = movielist[:5]
         btn = [[
             InlineKeyboardButton(
                 text=movie.strip(),
@@ -1987,7 +1994,7 @@ async def advantage_spell_chok(client, msg):
             return
         movielist += [movie.get('title') for movie in movies]
         movielist += [f"{movie.get('title')} {movie.get('year')}" for movie in movies]
-        SPELL_CHECK[msg.id] = movielist
+        SPELL_CHECK[mv_id] = movielist
         movielist = movielist[:5]
         btn = [
             [
