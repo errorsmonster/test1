@@ -134,7 +134,7 @@ async def next_page(bot, query):
       #      InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
       #      InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
       #  ])
-   # else:
+    else:
         btn = []
         btn.insert(0, 
             [
@@ -368,7 +368,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
       #     InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
       #     InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
       #  ])
-   # else:
+    else:
         btn = []
         btn.insert(0, 
             [
@@ -547,7 +547,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
      #       InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
      #       InlineKeyboardButton("Sᴇʟᴇᴄᴛ ᴀɢᴀɪɴ", callback_data=f"seasons#{key}")
      #   ])
-   # else:
+    else:
         btn = []
         btn.insert(0, 
             [
@@ -1700,7 +1700,7 @@ async def auto_filter(client, msg, spoll=False):
       #      InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
       #      InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
       #  ])
-  #  else:
+    else:
         btn = []
         btn.insert(0, 
             [
