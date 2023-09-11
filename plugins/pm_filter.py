@@ -1876,12 +1876,12 @@ async def advantage_spell_chok(client, msg):
             ]]  
             )
             if NO_RESULTS_MSG:
-                await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
-            k = await msg.reply_photo(
-                photo=SPELL_IMG, 
-                caption=script.I_CUDNT.format(mv_rqst),
-                reply_markup=InlineKeyboardMarkup(button)
-            )
+            await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
+        k = await msg.reply_photo(
+            photo=SPELL_IMG, 
+            caption=script.I_CUDNT.format(mv_rqst),
+            reply_markup=reply_markup 
+        )
             await asyncio.sleep(30)
             await k.delete()
             return
@@ -1917,16 +1917,16 @@ async def advantage_spell_chok(client, msg):
             ]]  
             )
             if NO_RESULTS_MSG:
-                await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
-            k = await msg.reply_photo(
-                photo=SPELL_IMG, 
-                caption=script.I_CUDNT.format(mv_rqst),
-                reply_markup=InlineKeyboardMarkup(button)
-            )
+            await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
+        k = await msg.reply_photo(
+            photo=SPELL_IMG, 
+            caption=script.I_CUDNT.format(mv_rqst),
+            reply_markup=reply_markup 
+        )
             await asyncio.sleep(30)
             await k.delete()
             return
-        SPELL_CHECK[msg.id] = movielist
+        SPELL_CHECK[mv_id] = movielist
         movielist = movielist[:5]
         btn = [[
             InlineKeyboardButton(
@@ -1964,12 +1964,12 @@ async def advantage_spell_chok(client, msg):
             ]]  
             )
             if NO_RESULTS_MSG:
-                await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
-            k = await msg.reply_photo(
-                photo=SPELL_IMG, 
-                caption=script.I_CUDNT.format(mv_rqst),
-                reply_markup=InlineKeyboardMarkup(button)
-            )
+            await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
+        k = await msg.reply_photo(
+            photo=SPELL_IMG, 
+            caption=script.I_CUDNT.format(mv_rqst),
+            reply_markup=reply_markup 
+        )
             await asyncio.sleep(30)
             await k.delete()
             return
@@ -1983,18 +1983,18 @@ async def advantage_spell_chok(client, msg):
             ]]  
             )
             if NO_RESULTS_MSG:
-                await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
-            k = await msg.reply_photo(
-                photo=SPELL_IMG, 
-                caption=script.I_CUDNT.format(mv_rqst),
-                reply_markup=InlineKeyboardMarkup(button)
-            )
+            await client.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
+        k = await msg.reply_photo(
+            photo=SPELL_IMG, 
+            caption=script.I_CUDNT.format(mv_rqst),
+            reply_markup=reply_markup 
+        )
             await asyncio.sleep(30)
             await k.delete()
             return
         movielist += [movie.get('title') for movie in movies]
         movielist += [f"{movie.get('title')} {movie.get('year')}" for movie in movies]
-        SPELL_CHECK[msg.id] = movielist
+        SPELL_CHECK[mv_id] = movielist
         movielist = movielist[:5]
         btn = [
             [
