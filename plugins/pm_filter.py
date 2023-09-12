@@ -1793,6 +1793,7 @@ async def auto_filter(client, msg, spoll=False):
             await dlt.delete()
             try:
                 if settings['auto_delete']:
+                    await dlt.delete()
                     await asyncio.sleep(300)
                     await hehe.delete()
                     await message.delete()
