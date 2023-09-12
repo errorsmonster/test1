@@ -213,6 +213,9 @@ async def next_page(bot, query):
             btn.insert(0,
         [InlineKeyboardButton(text="🔮 𝐇𝐎𝐖 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 🔮", url='https://t.me/How_To_Download_Movies321/14')]
         )
+            btn.insert(0,
+        [InlineKeyboardButton(f"☟ 🅂🄴🄻🄴🄲🅃 ☟",  'select')]
+                      )
     if not settings["button"]:
         cur_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
         time_difference = timedelta(hours=cur_time.hour, minutes=cur_time.minute, seconds=(cur_time.second+(cur_time.microsecond/1000000))) - timedelta(hours=curr_time.hour, minutes=curr_time.minute, seconds=(curr_time.second+(curr_time.microsecond/1000000)))
@@ -1728,6 +1731,9 @@ async def auto_filter(client, msg, spoll=False):
         )
         btn.insert(0,
         [InlineKeyboardButton(text="🔮 𝐇𝐎𝐖 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 🔮", url='https://t.me/How_To_Download_Movies321/14')]
+        )
+        btn.insert(0,
+        [InlineKeyboardButton(f"☟ 🅂🄴🄻🄴🄲🅃 ☟",  'select')]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     cur_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
