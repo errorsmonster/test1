@@ -129,6 +129,12 @@ async def next_page(bot, query):
                 InlineKeyboardButton("♻️ Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
             ]
         )
+        btn.insert(0,
+        [InlineKeyboardButton(text="🔮 𝐇𝐎𝐖 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 🔮", url='https://t.me/How_To_Download_Movies321/14')]
+        )
+        btn.insert(0,
+        [InlineKeyboardButton(f"☟ 🅂🄴🄻🄴🄲🅃 ☟",  'select')]
+                  )
       #  btn.insert(0, [
       #      InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
       #      InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
@@ -140,6 +146,12 @@ async def next_page(bot, query):
                 InlineKeyboardButton("🦋 ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
                 InlineKeyboardButton("♻️ Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
             ]
+        )
+        btn.insert(0,
+        [InlineKeyboardButton(text="🔮 𝐇𝐎𝐖 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 🔮", url='https://t.me/How_To_Download_Movies321/14')]
+        )
+        btn.insert(0,
+        [InlineKeyboardButton(f"☟ 🅂🄴🄻🄴🄲🅃 ☟",  'select')]
         )
      #   btn.insert(0, [
      #       InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
@@ -358,6 +370,12 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("♻️ Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
             ]
         )
+        btn.insert(0,
+        [InlineKeyboardButton(text="🔮 𝐇𝐎𝐖 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 🔮", url='https://t.me/How_To_Download_Movies321/14')]
+        )
+        btn.insert(0,
+        [InlineKeyboardButton(f"☟ 🅂🄴🄻🄴🄲🅃 ☟",  'select')]
+        )
       #  btn.insert(0, [
       #     InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
       #     InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
@@ -369,6 +387,12 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("🦋 ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
                 InlineKeyboardButton("♻️ Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
             ]
+        )
+        btn.insert(0,
+        [InlineKeyboardButton(text="🔮 𝐇𝐎𝐖 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 🔮", url='https://t.me/How_To_Download_Movies321/14')]
+        )
+        btn.insert(0,
+        [InlineKeyboardButton(f"☟ 🅂🄴🄻🄴🄲🅃 ☟",  'select')]
         )
       #  btn.insert(0, [
       #      InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
@@ -536,6 +560,12 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             ]
             for file in files
         ]
+        btn.insert(0,
+        [InlineKeyboardButton(text="🔮 𝐇𝐎𝐖 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 🔮", url='https://t.me/How_To_Download_Movies321/14')]
+        )
+        btn.insert(0,
+        [InlineKeyboardButton(f"☟ 🅂🄴🄻🄴🄲🅃 ☟",  'select')]
+        )
      #   btn.insert(0, [
      #       InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
      #       InlineKeyboardButton("Sᴇʟᴇᴄᴛ ᴀɢᴀɪɴ", callback_data=f"seasons#{key}")
@@ -547,6 +577,12 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("🦋 ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
                 InlineKeyboardButton("♻️ Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
             ]
+        )
+        btn.insert(0,
+        [InlineKeyboardButton(text="🔮 𝐇𝐎𝐖 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 🔮", url='https://t.me/How_To_Download_Movies321/14')]
+        )
+        btn.insert(0,
+        [InlineKeyboardButton(f"☟ 🅂🄴🄻🄴🄲🅃 ☟",  'select')]
         )
      #   btn.insert(0, [
      #       InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
@@ -1687,6 +1723,12 @@ async def auto_filter(client, msg, spoll=False):
                 InlineKeyboardButton("♻️ Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
             ]
         )
+        btn.insert(0,
+        [InlineKeyboardButton(text="🔮 𝐇𝐎𝐖 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 🔮", url='https://t.me/How_To_Download_Movies321/14')]
+        )
+        btn.insert(0,
+        [InlineKeyboardButton(f"☟ 🅂🄴🄻🄴🄲🅃 ☟",  'select')]
+        )
       #  btn.insert(0, [
       #      InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
       #      InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
@@ -1698,6 +1740,12 @@ async def auto_filter(client, msg, spoll=False):
                 InlineKeyboardButton("🦋 ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
                 InlineKeyboardButton("♻️ Sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
             ]
+        )
+        btn.insert(0,
+        [InlineKeyboardButton(text="🔮 𝐇𝐎𝐖 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 🔮", url='https://t.me/How_To_Download_Movies321/14')]
+        )
+        btn.insert(0,
+        [InlineKeyboardButton(f"☟ 🅂🄴🄻🄴🄲🅃 ☟",  'select')]
         )
      #   btn.insert(0, [
      #       InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
