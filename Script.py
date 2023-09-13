@@ -209,7 +209,7 @@ JOIN : @Filmymod123 ⚡**</b>"""
 
     IMDB_TEMPLATE_TXT = """<b>
 📟 ᴍᴏᴠɪᴇ ɴᴀᴍᴇ: {title}
-🙋‍♂ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ: {user}
+🙋‍♂ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ: {message.from_user.mention}
 👨‍👩‍👧‍👦 ɢʀᴏᴜᴘ: {chat}
 ʀᴇꜱᴜʟᴛ ꜱʜᴏᴡɴ ɪɴ: {remaining_seconds}</b>"""
     
