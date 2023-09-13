@@ -211,7 +211,7 @@ JOIN : @Filmymod123 ⚡**</b>"""
 📟 ᴍᴏᴠɪᴇ ɴᴀᴍᴇ: {title}
 🙋‍♂ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ: {message.from_user.mention}
 👨‍👩‍👧‍👦 ɢʀᴏᴜᴘ: {message.chat.title}
-ʀᴇꜱᴜʟᴛ ꜱʜᴏᴡɴ ɪɴ: {remaining_seconds}</b>"""
+⏱️ ʀᴇꜱᴜʟᴛ ꜱʜᴏᴡɴ ɪɴ: {remaining_seconds}</b>"""
     
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
