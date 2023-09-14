@@ -174,7 +174,7 @@ async def start(client, message):
             ]
         )
     )
-    )
+    
             except Exception as e:
                 logger.warning(e, exc_info=True)
                 continue
@@ -346,13 +346,13 @@ async def start(client, message):
                     if IS_STREAM
                     else InlineKeyboardMarkup(
                         [
-                            [
-                                InlineKeyboardButton('🔰 𝙈𝙤𝙫𝙞𝙚 𝙎𝙚𝙖𝙧𝙘𝙝 𝙂𝙧𝙤𝙪𝙥 🔰', url=f'https://t.me/FilmymodMovies'),
-                            ]
-                        ]
-                    )
-                )
-            )
+             [
+              InlineKeyboardButton('🔰 𝙈𝙤𝙫𝙞𝙚 𝙎𝙚𝙖𝙧𝙘𝙝 𝙂𝙧𝙤𝙪𝙥 🔰', url=f'https://t.me/FilmymodMovies'),
+             ]
+            ]
+        )
+    )
+    
             filesarr.append(msg)
      #  k = await client.send_message(chat_id = message.from_user.id, text=f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie Files/Videos will be deleted in <b><u>10 mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this ALL Files/Videos to your Saved Messages and Start Download there</i></b>")
      #  await asyncio.sleep(600)
@@ -434,7 +434,7 @@ async def start(client, message):
                         ]
                     )
                 )
-            )
+            
             filetype = msg.media
             file = getattr(msg, filetype.value)
             title = '@FilmymodMovies ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
@@ -514,7 +514,7 @@ async def start(client, message):
                         ]
                     )
                 )
-            )
+            
     btn = [[
         InlineKeyboardButton("Get File Again", callback_data=f'delfile#{file_id}')
     ]]
