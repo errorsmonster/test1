@@ -153,7 +153,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton('🔰 𝙈𝙤𝙫𝙞𝙚 𝙎𝙚𝙖𝙧𝙘𝙝 𝙂𝙧𝙤𝙪𝙥 🔰', url=f'https://t.me/FilmymodMovies'),
+              InlineKeyboardButton('🔰 𝙈𝙤𝙫𝙞𝙚 𝙎𝙚𝙖𝙧𝙘𝙝 𝙂𝙧𝙤𝙪𝙥 🔰', url=f'https://t.me/FilmymodMovies')
              ]
             ]
         )
@@ -169,7 +169,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton('🔰 𝙈𝙤𝙫𝙞𝙚 𝙎𝙚𝙖𝙧𝙘𝙝 𝙂𝙧𝙤𝙪𝙥 🔰', url=f'https://t.me/FilmymodMovies'),
+              InlineKeyboardButton('🔰 𝙈𝙤𝙫𝙞𝙚 𝙎𝙚𝙖𝙧𝙘𝙝 𝙂𝙧𝙤𝙪𝙥 🔰', url=f'https://t.me/FilmymodMovies')
              ]
             ]
         )
@@ -333,21 +333,10 @@ async def start(client, message):
                 file_id=file_id,
                 caption=f_caption,
                 protect_content=True if pre == 'filep' else False,
-                reply_markup=(
-                    InlineKeyboardMarkup(
-                        [
-                            [
-                                InlineKeyboardButton('Watch Online/ Fast Download', callback_data=f'gen_stream_link:{file_id}')
-                            ],[
-                                InlineKeyboardButton('🔰 𝙈𝙤𝙫𝙞𝙚 𝙎𝙚𝙖𝙧𝙘𝙝 𝙂𝙧𝙤𝙪𝙥 🔰', url=f'https://t.me/FilmymodMovies'),
-                            ]
-                        ]
-                    )
-                    if IS_STREAM
-                    else InlineKeyboardMarkup(
-                        [
+                reply_markup=InlineKeyboardMarkup(
+            [
              [
-              InlineKeyboardButton('🔰 𝙈𝙤𝙫𝙞𝙚 𝙎𝙚𝙖𝙧𝙘𝙝 𝙂𝙧𝙤𝙪𝙥 🔰', url=f'https://t.me/FilmymodMovies'),
+              InlineKeyboardButton('🔰 𝙈𝙤𝙫𝙞𝙚 𝙎𝙚𝙖𝙧𝙘𝙝 𝙂𝙧𝙤𝙪𝙥 🔰', url=f'https://t.me/FilmymodMovies')
              ]
             ]
         )
@@ -415,25 +404,14 @@ async def start(client, message):
                 chat_id=message.from_user.id,
                 file_id=file_id,
                 protect_content=True if pre == 'filep' else False,
-                reply_markup=(
-                    InlineKeyboardMarkup(
-                        [
-                            [
-                                InlineKeyboardButton('Watch Online/ Fast Download', callback_data=f'gen_stream_link:{file_id}')
-                            ],[
-                                InlineKeyboardButton('🔰 𝙈𝙤𝙫𝙞𝙚 𝙎𝙚𝙖𝙧𝙘𝙝 𝙂𝙧𝙤𝙪𝙥 🔰', url=f'https://t.me/FilmymodMovies'),
-                            ]
-                        ]
-                    )
-                    if IS_STREAM
-                    else InlineKeyboardMarkup(
-                        [
-                            [
-                                InlineKeyboardButton('🔰 𝙈𝙤𝙫𝙞𝙚 𝙎𝙚𝙖𝙧𝙘𝙝 𝙂𝙧𝙤𝙪𝙥 🔰', url=f'https://t.me/FilmymodMovies'),
-                            ]
-                        ]
-                    )
-                )
+                reply_markup=InlineKeyboardMarkup(
+            [
+             [
+              InlineKeyboardButton('🔰 𝙈𝙤𝙫𝙞𝙚 𝙎𝙚𝙖𝙧𝙘𝙝 𝙂𝙧𝙤𝙪𝙥 🔰', url=f'https://t.me/FilmymodMovies')
+             ]
+            ]
+        )
+    )
             
             filetype = msg.media
             file = getattr(msg, filetype.value)
@@ -495,25 +473,14 @@ async def start(client, message):
         file_id=file_id,
         caption=f_caption,
         protect_content=True if pre == 'filep' else False,
-        reply_markup=(
-                    InlineKeyboardMarkup(
-                        [
-                            [
-                                InlineKeyboardButton('Watch Online/ Fast Download', callback_data=f'gen_stream_link:{file_id}')
-                            ],[
-                                InlineKeyboardButton('🔰 𝙈𝙤𝙫𝙞𝙚 𝙎𝙚𝙖𝙧𝙘𝙝 𝙂𝙧𝙤𝙪𝙥 🔰', url=f'https://t.me/FilmymodMovies'),
-                            ]
-                        ]
-                    )
-                    if IS_STREAM
-                    else InlineKeyboardMarkup(
-                        [
-                            [
-                                InlineKeyboardButton('🔰 𝙈𝙤𝙫𝙞𝙚 𝙎𝙚𝙖𝙧𝙘𝙝 𝙂𝙧𝙤𝙪𝙥 🔰', url=f'https://t.me/FilmymodMovies'),
-                            ]
-                        ]
-                    )
-                )
+        reply_markup=InlineKeyboardMarkup(
+            [
+             [
+              InlineKeyboardButton('🔰 𝙈𝙤𝙫𝙞𝙚 𝙎𝙚𝙖𝙧𝙘𝙝 𝙂𝙧𝙤𝙪𝙥 🔰', url=f'https://t.me/FilmymodMovies')
+             ]
+            ]
+        )
+    )
             
     btn = [[
         InlineKeyboardButton("Get File Again", callback_data=f'delfile#{file_id}')
