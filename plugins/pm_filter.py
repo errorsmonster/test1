@@ -945,7 +945,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.reply_markup.inline_keyboard.pop(0)
             query.message.reply_markup.inline_keyboard.insert(0, buttons)
             await query.message.edit_reply_markup(InlineKeyboardMarkup(query.message.reply_markup.inline_keyboard))
-                                                               InlineKeyboardButton('🎥 Stream/Watch online', url=page_link)]]))
+                                                               
         except Exception as e:
             print(e)  # print the error message
             await query.answer(f"☣something went wrong. Check error:\n\n{e}", show_alert=True)
