@@ -928,23 +928,24 @@ async def cb_handler(client: Client, query: CallbackQuery):
             fileName = {quote_plus(get_name(log_msg))}
             page_link = f"{STREAM_URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
             stream_link = f"{STREAM_URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
-
-            g = await query.message.reply_text("<b>Link Generating...</b>")
-            await asyncio.sleep(1)
-            await g.delete()
-
-            await log_msg.reply_text(
-                text=f"Usᴇʀ ID: {user_id}\n\nUsᴇʀ Nᴀᴍᴇ: {username} 𝐅𝐢𝐥𝐞 𝐍𝐚𝐦𝐞: {fileName}",
-                quote=True,
-                disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Fast Download ⚡", url=stream_link),
-                                                    InlineKeyboardButton('🎥 Stream/Watch online', url=page_link)]]))
-            return await query.message.reply_text(
-                text="<b>Sᴛʀᴇᴀᴍ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴇᴅ...😁</b>",
-                quote=True,
-                disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Fast Download ⚡", url=stream_link),
-                                                    InlineKeyboardButton('🎥 Stream/Watch online', url=page_link)]]))
+            buttons = [
+                    InlineKeyboardButton(
+                        "Fast Download ⚡",
+                        url=stream_link,
+                    ),
+                    InlineKeyboardButton(
+                        "🎥 Stream/Watch online",
+                        url=page_link,
+                    ),
+                ]
+            
+            
+            query.message.reply_markup = query.message.reply_markup or []
+            # remove the first row
+            query.message.reply_markup.inline_keyboard.pop(0)
+            query.message.reply_markup.inline_keyboard.insert(0, buttons)
+            await query.message.edit_reply_markup(InlineKeyboardMarkup(query.message.reply_markup.inline_keyboard))
+                                                               InlineKeyboardButton('🎥 Stream/Watch online', url=page_link)]]))
         except Exception as e:
             print(e)  # print the error message
             await query.answer(f"☣something went wrong. Check error:\n\n{e}", show_alert=True)
