@@ -934,7 +934,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         url=stream_link,
                     ),
                     InlineKeyboardButton(
-                        "🖥 Watch online 🖥",
+                        "🖥 Watch Online 🖥",
                         url=page_link,
                     ),
                 ]
