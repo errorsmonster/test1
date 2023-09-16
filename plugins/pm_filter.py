@@ -930,11 +930,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             stream_link = f"{STREAM_URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
             buttons = [
                     InlineKeyboardButton(
-                        "Fast Download ⚡",
+                        "📥 Fast Download 📥",
                         url=stream_link,
                     ),
                     InlineKeyboardButton(
-                        "🎥 Stream/Watch online",
+                        "🖥 Watch online 🖥",
                         url=page_link,
                     ),
                 ]
