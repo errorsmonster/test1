@@ -532,7 +532,7 @@ async def start(client, message):
             InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton('♻️ Watch Online/ Fast Download ♻️', callback_data=f'gen_stream_link:{file_id}')                        
+                        InlineKeyboardButton('⚡ Watch Online/ Fast Download ⚡', callback_data=f'gen_stream_link:{file_id}')                        
                     ],[
                         InlineKeyboardButton('🔰 𝙈𝙤𝙫𝙞𝙚 𝙎𝙚𝙖𝙧𝙘𝙝 𝙂𝙧𝙤𝙪𝙥 🔰', url=f'https://t.me/FilmymodMovies')
                     ]
