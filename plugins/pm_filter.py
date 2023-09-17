@@ -133,7 +133,7 @@ async def next_page(bot, query):
         [InlineKeyboardButton(f"☟ 🅂🄴🄻🄴🄲🅃 ☟",  'select')]
         )
         btn.insert(0,
-        [InlineKeyboardButton("🔮 𝐇𝐎𝐖 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 🔮", url='https://t.me/How_To_Download_Movies321/14')]
+        [InlineKeyboardButton("🔮 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ  🔮", url='https://t.me/How_To_Download_Movies321/14')]
         )
       #  btn.insert(0, [
       #      InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
@@ -151,7 +151,7 @@ async def next_page(bot, query):
         [InlineKeyboardButton(f"☟ 🅂🄴🄻🄴🄲🅃 ☟",  'select')]
         )
         btn.insert(0,
-        [InlineKeyboardButton("🔮 𝐇𝐎𝐖 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 🔮", url='https://t.me/How_To_Download_Movies321/14')]
+        [InlineKeyboardButton("🔮 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ  🔮", url='https://t.me/How_To_Download_Movies321/14')]
         )
      #   btn.insert(0, [
      #       InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
@@ -374,7 +374,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         [InlineKeyboardButton(f"☟ 🅂🄴🄻🄴🄲🅃 ☟",  'select')]
         )
         btn.insert(0,
-        [InlineKeyboardButton("🔮 𝐇𝐎𝐖 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 🔮", url='https://t.me/How_To_Download_Movies321/14')]
+        [InlineKeyboardButton("🔮 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ  🔮", url='https://t.me/How_To_Download_Movies321/14')]
         )
       #  btn.insert(0, [
       #     InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
@@ -392,7 +392,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         [InlineKeyboardButton(f"☟ 🅂🄴🄻🄴🄲🅃 ☟",  'select')]
         )
         btn.insert(0,
-        [InlineKeyboardButton("🔮 𝐇𝐎𝐖 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 🔮", url='https://t.me/How_To_Download_Movies321/14')]
+        [InlineKeyboardButton("🔮 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ  🔮", url='https://t.me/How_To_Download_Movies321/14')]
         )
       #  btn.insert(0, [
       #      InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
@@ -564,7 +564,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         [InlineKeyboardButton(f"☟ 🅂🄴🄻🄴🄲🅃 ☟",  'select')]
         )
         btn.insert(0,
-        [InlineKeyboardButton("🔮 𝐇𝐎𝐖 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 🔮", url='https://t.me/How_To_Download_Movies321/14')]
+        [InlineKeyboardButton("🔮 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ  🔮", url='https://t.me/How_To_Download_Movies321/14')]
         )
      #   btn.insert(0, [
      #       InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
@@ -582,7 +582,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         [InlineKeyboardButton(f"☟ 🅂🄴🄻🄴🄲🅃 ☟",  'select')]
         )
         btn.insert(0,
-        [InlineKeyboardButton("🔮 𝐇𝐎𝐖 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 🔮", url='https://t.me/How_To_Download_Movies321/14')]
+        [InlineKeyboardButton("🔮 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ  🔮", url='https://t.me/How_To_Download_Movies321/14')]
         )
      #   btn.insert(0, [
      #       InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
@@ -1761,7 +1761,7 @@ async def auto_filter(client, msg, spoll=False):
         [InlineKeyboardButton(f"☟ 🅂🄴🄻🄴🄲🅃 ☟",  'select')]
         )
         btn.insert(0,
-        [InlineKeyboardButton("🔮 𝐇𝐎𝐖 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 🔮", url='https://t.me/How_To_Download_Movies321/14')]
+        [InlineKeyboardButton("🔮 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ  🔮", url='https://t.me/How_To_Download_Movies321/14')]
         )
       #  btn.insert(0, [
       #      InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
@@ -1779,7 +1779,7 @@ async def auto_filter(client, msg, spoll=False):
         [InlineKeyboardButton(f"☟ 🅂🄴🄻🄴🄲🅃 ☟",  'select')]
         )
         btn.insert(0,
-        [InlineKeyboardButton("🔮 𝐇𝐎𝐖 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 🔮", url='https://t.me/How_To_Download_Movies321/14')]
+        [InlineKeyboardButton("🔮 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ  🔮", url='https://t.me/How_To_Download_Movies321/14')]
         )
      #   btn.insert(0, [
      #       InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
@@ -1849,7 +1849,7 @@ async def auto_filter(client, msg, spoll=False):
                 cap += f"<b>\n📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'>[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n</a></b>"
     else:
         if settings["button"]:
-            cap = f"<b>Hᴇʏ {message.from_user.mention} ❤️\n\n📁 I Fᴏᴜɴᴅ {total_results} Rᴇsᴜʟᴛs ғᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ ☞ {search}\n\n</b>"
+            cap = f"<b>Hᴇʏ {message.from_user.mention} ❤️\n\n📂 I Fᴏᴜɴᴅ ✨ {total_results} Rᴇsᴜʟᴛs ғᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ ☞ {search}\n\n</b>"
         else:
             cap = f"<b>Hᴇʏ {message.from_user.mention}, Fᴏᴜɴᴅ {total_results} Rᴇsᴜʟᴛs ғᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ {search}\n\n</b>"
             cap+="<b><u>📚 Requested Files 👇</u></b>\n\n"
