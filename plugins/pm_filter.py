@@ -66,8 +66,8 @@ async def give_filter(client, message):
         if total_results == 0:
             return
         else:
-            return await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ‌ᴜᴇʀʏ {search}.</b> \n\n𝗔𝗿𝗲 𝗕𝗵𝗮𝗶...!!!\n𝗣𝗵𝗲𝗹𝗲 𝗠𝗼𝘃𝗶𝗲𝘀 𝗚𝗿𝗼𝘂𝗽 𝗠𝗲 𝗠𝗼𝘃𝗶𝗲 𝗦𝗲𝗮𝗿𝗰𝗵 𝗞𝗮𝗿𝗼. 𝗠𝗼𝘃𝗶𝗲 𝗡𝗮 𝗠𝗶𝗹𝗲 𝗧𝗼 𝗨𝘀𝗸𝗲 𝗕𝗮𝗮𝗱 𝗜𝘀 𝗚𝗿𝗼𝘂𝗽 𝗠𝗲 𝗔𝗸𝗲 𝗔𝗱𝗺𝗶𝗻 𝗞𝗼 𝗕𝗮𝘁𝗮𝗼 ☟",   
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/FilmymodMovies")]]))
+            return await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ‌ᴜᴇʀʏ {search}.\n\nAre Bhai...!!!\nPhele Movies Group Me Jaake Movie Search karo Movie Na Mile To uske Baad Is Group Me Ake Admin Ko Batao\n\n♻️ MOVIE REQUEST FORMAT ♻️\n\n🔹Type Movie/Series Name With Release Year\n➢ Example: Kantara 2022</b>",   
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 𝙈𝙤𝙫𝙞𝙚 𝙎𝙚𝙖𝙧𝙘𝙝 𝙂𝙧𝙤𝙪𝙥", url=f"https://t.me/FilmymodMovies")]]))
 
 @Client.on_message(filters.private & filters.text & filters.incoming)
 async def pm_text(bot, message):
@@ -935,11 +935,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             stream_link = f"{STREAM_URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
             buttons = [
                     InlineKeyboardButton(
-                        "📥 Fast Download 📥",
+                        "📥 Fast Download",
                         url=stream_link,
                     ),
                     InlineKeyboardButton(
-                        "🖥 Watch Online 🖥",
+                        "🖥 Watch Online",
                         url=page_link,
                     ),
                 ]
