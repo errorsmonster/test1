@@ -76,7 +76,7 @@ async def pm_text(bot, message):
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
     if user_id in ADMINS: return # ignore admins
     await message.reply_text(
-         text="<b>Hᴇʏ {user} 😍 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ᴏɴ ᴏᴜʀ <a href=https://t.me/FilmymodMovies>ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ</a> ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ👇\n\nHᴇʏ {user} 😍 ,\n\ʏᴀʜᴀ ᴀᴀᴘ ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ ɴʜɪ ᴋᴀʀ ꜱᴀᴋᴛᴇ ʜᴏ. ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ᴍᴇ ᴊᴀᴀᴋᴇ ᴍᴏᴠɪᴇ ᴀᴜʀ ᴡᴇʙꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇsᴛ ᴋᴀʀᴏ 👇🏻 <a href=https://t.me/FilmymodMovies>ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ</a></b>",   
+         text="<b>Hᴇʏ</b> {user} 😍 ,\n<b>ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ᴏɴ ᴏᴜʀ <a href=https://t.me/FilmymodMovies>ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ</a> ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ\n\nHᴇʏ</b> {user} 😍 ,\n<b>ʏᴀʜᴀ ᴀᴀᴘ ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ ɴʜɪ ᴋᴀʀ ꜱᴀᴋᴛᴇ ʜᴏ. ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ᴍᴇ ᴊᴀᴀᴋᴇ ᴍᴏᴠɪᴇ ᴀᴜʀ ᴡᴇʙꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇsᴛ ᴋᴀʀᴏ</b> 👇🏻</b>",   
          reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/FilmymodMovies")]]))
     await bot.send_message(
         chat_id=LOG_CHANNEL,
