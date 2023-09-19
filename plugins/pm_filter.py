@@ -66,7 +66,7 @@ async def give_filter(client, message):
         if total_results == 0:
             return
         else:
-            return await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ‌ᴜᴇʀʏ {search}.\n\nAre Bhai...!!!\nPhele <a href='https://t.me/FilmymodMovies'>Movies Group</a> Me Jaake Movie Search karo Movie Na Mile To uske Baad Is Group Me Ake Admin Ko Batao\n\n♻️ MOVIE REQUEST FORMAT ♻️\n\n🔹Type Movie/Series Name With Release Year\n➢ Example: Kantara 2022</b>",   
+            return await message.reply_text(f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ‌ᴜᴇʀʏ {search}.\n\nAre Bhai...!!!\nPhele Movies Group Me Jaake Movie Search karo Movie Na Mile To uske Baad Is Group Me Ake Admin Ko Batao\n\n♻️ MOVIE REQUEST FORMAT ♻️\n\n🔹Type Movie/Series Name With Release Year\n➢ Example: Kantara 2022</b>",   
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 𝙈𝙤𝙫𝙞𝙚 𝙎𝙚𝙖𝙧𝙘𝙝 𝙂𝙧𝙤𝙪𝙥", url=f"https://t.me/FilmymodMovies")]]))
 
 @Client.on_message(filters.private & filters.text & filters.incoming)
