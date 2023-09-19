@@ -442,16 +442,16 @@ async def start(client, message):
                 protect_content=True if pre == 'filep' else False,
                 reply_markup=(
             InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton('⚡ Watch Online/ Fast Download ⚡', callback_data=f'gen_stream_link:{file_id}')
-                    ],[
-                        InlineKeyboardButton('🔰 𝙈𝙤𝙫𝙞𝙚 𝙎𝙚𝙖𝙧𝙘𝙝 𝙂𝙧𝙤𝙪𝙥 🔰', url=f'https://t.me/FilmymodMovies')
-                    ]
-                ]
-            )
-            if IS_STREAM
-            else InlineKeyboardMarkup(
+            #    [
+            #       [
+            #            InlineKeyboardButton('⚡ Watch Online/ Fast Download ⚡', callback_data=f'gen_stream_link:{file_id}')
+            #        ],[
+            #            InlineKeyboardButton('🔰 𝙈𝙤𝙫𝙞𝙚 𝙎𝙚𝙖𝙧𝙘𝙝 𝙂𝙧𝙤𝙪𝙥 🔰', url=f'https://t.me/FilmymodMovies')
+            #        ]
+            #    ]
+         #   )
+         #  if IS_STREAM
+         #   else InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton('🔰 𝙈𝙤𝙫𝙞𝙚 𝙎𝙚𝙖𝙧𝙘𝙝 𝙂𝙧𝙤𝙪𝙥 🔰', url=f'https://t.me/FilmymodMovies')
@@ -515,13 +515,13 @@ async def start(client, message):
                 # Delete the loading message
                 await loading_message.delete()
                 return
-    log_msg = await client.send_cached_media(
-        chat_id=int(STREAM_BIN),
-        file_id=file_id,
-    )
-    fileName = {quote_plus(get_name(log_msg))}
-    page_link = f"{STREAM_URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
-    stream_link = f"{STREAM_URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+#    log_msg = await client.send_cached_media(
+#        chat_id=int(STREAM_BIN),
+#        file_id=file_id,
+#    )
+#    fileName = {quote_plus(get_name(log_msg))}
+#    page_link = f"{STREAM_URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+#    stream_link = f"{STREAM_URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         
     msg = await client.send_cached_media(
         chat_id=message.from_user.id,
