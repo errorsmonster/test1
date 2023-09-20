@@ -263,7 +263,7 @@ async def start(client, message):
         is_valid = await check_token(client, userid, token)
         if is_valid == True:
             await message.reply_photo(
-                photo="https://telegra.ph/file/f65452352bf7541026bca.jpg",
+                photo="https://telegra.ph/file/ba0ece18f8a69f6017ebe.jpg",
                 caption=f"<b>Hᴇʏ {message.from_user.mention}, \nʏᴏᴜ ᴀʀᴇ sᴜᴄᴄᴇssғᴜʟʟʏ ᴠᴇʀɪғɪᴇᴅ !\nɴᴏᴡ ʏᴏᴜ ʜᴀᴠᴇ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇss ғᴏʀ ᴀʟʟ ᴍᴏᴠɪᴇs ᴛɪʟʟ ᴛᴏᴅᴀʏ ᴍɪᴅɴɪɢʜᴛ.</b>",
                 # protect_content=True
             )
