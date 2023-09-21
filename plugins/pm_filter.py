@@ -1423,7 +1423,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "source":
         buttons = [[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='about')
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='about'),
+            InlineKeyboardButton('✪ Cᴏɴᴛᴀᴄᴛ', url='https://t.me/Filmymod7')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
