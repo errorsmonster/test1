@@ -88,12 +88,13 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton("🔄 𝗧𝗿𝘆 𝗔𝗴𝗮𝗶𝗻", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,      
-        await client.send_photo(
-            photo="https://telegra.ph/file/72ac4f6b845a491e37625.jpg",
-            caption=<b>𝗣𝗹𝗲𝗮𝘀𝗲 ♻️ 𝗝𝗼𝗶𝗻 𝗠𝘆 𝗨𝗽𝗱𝗮𝘁𝗲 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 ♻️ 𝗙𝗶𝗿𝘀𝘁, 𝗧𝗵𝗲𝗻 𝗖𝗼𝗺𝗲 𝗯𝗮𝗰𝗸 𝗛𝗲𝗿𝗲 𝗮𝗻𝗱 𝗖𝗹𝗶𝗰𝗸 🔄 𝗧𝗿𝘆 𝗔𝗴𝗮𝗶𝗻 𝗕𝘂𝘁𝘁𝗼𝗻 ...\n\n𝗣𝗵𝗲𝗹𝗲 𝗠𝗲𝗿𝗲 𝗨𝗽𝗱𝗮𝘁𝗲 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 𝗠𝗲 𝗝𝗼𝗶𝗻 𝗛𝗼 𝗝𝗮𝗼 𝗨𝘀𝗸𝗲 𝗯𝗮𝗮𝗱 𝗧𝗿𝘆 𝗔𝗴𝗮𝗶𝗻 𝗕𝘂𝘁𝘁𝗼𝗻 𝗣𝗲 𝗖𝗹𝗶𝗰𝗸 𝗸𝗮𝗿𝗼 ☟ </b>",
-            reply_markup=InlineKeyboardMarkup(btn),
-            parse_mode=enums.ParseMode.MARKDOWN
-        )
+        await message.reply_photo(
+            photo="https://telegra.ph/file/72ac4f6b845a491e37625.jpg",
+            chat_id=message.from_user.id,
+            caption="𝗣𝗹𝗲𝗮𝘀𝗲 ♻️ 𝗝𝗼𝗶𝗻 𝗠𝘆 𝗨𝗽𝗱𝗮𝘁𝗲 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 ♻️ 𝗙𝗶𝗿𝘀𝘁, 𝗧𝗵𝗲𝗻 𝗖𝗼𝗺𝗲 𝗯𝗮𝗰𝗸 𝗛𝗲𝗿𝗲 𝗮𝗻𝗱 𝗖𝗹𝗶𝗰𝗸 🔄 𝗧𝗿𝘆 𝗔𝗴𝗮𝗶𝗻 𝗕𝘂𝘁𝘁𝗼𝗻 ...\n\n𝗣𝗵𝗲𝗹𝗲 𝗠𝗲𝗿𝗲 𝗨𝗽𝗱𝗮𝘁𝗲 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 𝗠𝗲 𝗝𝗼𝗶𝗻 𝗛𝗼 𝗝𝗮𝗼 𝗨𝘀𝗸𝗲 𝗯𝗮𝗮𝗱 𝗧𝗿𝘆 𝗔𝗴𝗮𝗶𝗻 𝗕𝘂𝘁𝘁𝗼𝗻 𝗣𝗲 𝗖𝗹𝗶𝗰𝗸 𝗸𝗮𝗿𝗼 ☟ ",
+            reply_markup=InlineKeyboardMarkup(btn),
+            parse_mode=enums.ParseMode.MARKDOWN
+        )
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
