@@ -79,7 +79,9 @@ async def start(client, message):
                 )
             ]
         ]
-
+        await message.reply_photo(
+            photo="https://telegra.ph/file/72ac4f6b845a491e37625.jpg",
+            reply_markup=InlineKeyboardMarkup(btn)
         if message.command[1] != "subscribe":
             try:
                 kk, file_id = message.command[1].split("_", 1)
