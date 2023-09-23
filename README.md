@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://telegra.ph/file/7f5f7906440c8eaa5afc6.jpg" alt="Filmymod Bot Logo">
+  <img src="https://telegra.ph/file/21200120f5f7806f5ba03.jpg" alt="Filmymod Bot Logo">
 </p>
 <h1 align="center">
   FILMYMOD BOT
@@ -111,7 +111,7 @@
 <details><summary>Deploy To Heroku</summary>
 <p>
 <br>
-<a href="https://heroku.com/deploy?template=https://github.com/asik7777/TeamHMT">
+<a href="https://heroku.com/deploy?template=https://github.com/asik7777/Movies-Search2-Bot">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy To Heroku">
 </a>
 </p>
