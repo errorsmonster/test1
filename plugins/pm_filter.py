@@ -81,7 +81,7 @@ async def pm_text(bot, message):
          reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/FilmymodMovies")]]))
     await bot.send_message(
         chat_id=LOG_CHANNEL,
-        text=f"<b>👻 ⚡Filmymod Movies Bot⚡ 𝐏𝐌_𝐌𝐒𝐆 👻\n\n📝ᴍᴇssᴀɢᴇ:-{content}\n\n👶🏻ʀᴇQᴜᴇꜱᴛᴇᴅ ʙʏ:-{user}\n\n🃏ᴜꜱᴇʀ ɪᴅ:-{user_id}</b>"
+        text=f"<b>👻 ⚡ᴍᴏᴠɪᴇꜱ ꜱᴇᴀʀᴄʜ ʙᴏᴛ⚡ 𝐏𝐌_𝐌𝐒𝐆 👻\n\n📝ᴍᴇssᴀɢᴇ:-{content}\n\n👶🏻ʀᴇQᴜᴇꜱᴛᴇᴅ ʙʏ:-{user}\n\n🃏ᴜꜱᴇʀ ɪᴅ:-{user_id}</b>"
     )
     
 @Client.on_callback_query(filters.regex(r"^next"))
@@ -1704,7 +1704,7 @@ async def auto_filter(client, msg, spoll=False):
             btn = [[
                     InlineKeyboardButton(f"Searching  🔍  for  '{search}'", callback_data=f"close_data")
                   ]]
-            m=await message.reply_sticker('CAACAgUAAxkBAAIFNGJSlfOErbkSeLt9SnOniU-58UUBAAKaAAPIlGQULGXh4VzvJWoeBA', reply_markup=InlineKeyboardMarkup(btn))
+            m=await message.reply_sticker('CAACAgUAAxkBAAEKXoVlDqwmg192bVJZZl2-LIcuNBwM1gACcwAD_lPRFGwDdnXy1J3vMAQ', reply_markup=InlineKeyboardMarkup(btn))
             search = search.lower()
             find = search.split(" ")
             search = ""
@@ -1736,7 +1736,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [[
                 InlineKeyboardButton(f"Searching  🔍  for  '{search}'", callback_data=f"close_data")
               ]]
-        m=await message.reply_sticker('CAACAgUAAxkBAAIFNGJSlfOErbkSeLt9SnOniU-58UUBAAKaAAPIlGQULGXh4VzvJWoeBA', reply_markup=InlineKeyboardMarkup(btn))
+        m=await message.reply_sticker('CAACAgUAAxkBAAEKXoVlDqwmg192bVJZZl2-LIcuNBwM1gACcwAD_lPRFGwDdnXy1J3vMAQ', reply_markup=InlineKeyboardMarkup(btn))
         settings = await get_settings(message.chat.id)
         await msg.message.delete()
     pre = 'filep' if settings['file_secure'] else 'file'
