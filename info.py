@@ -48,8 +48,8 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 #stream feature - @TeamHMT_Bots
-STREAM_BIN = environ.get("STREAM_BIN", "-1001961789861") #Log channel/Bin Channel id -100xxxxxxx
-STREAM_URL = environ.get("STREAM_URL", "https://filestream-8acd50e51f9c.herokuapp.com/") # https://example.com/ (Your Stream Url)
+STREAM_BIN = environ.get("STREAM_BIN", "") #Log channel/Bin Channel id -100xxxxxxx
+STREAM_URL = environ.get("STREAM_URL", "") # https://example.com/ (Your Stream Url)
 IS_STREAM = bool(STREAM_BIN and STREAM_URL)
 #Use this feature, if you have deployed file to link bot. paste the app url with stream url and add filter bot as admin in bin channel and add id in stream bin
 
@@ -62,14 +62,14 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/FilmymodMovies')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Filmymod123')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/mini_netflix_official')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/mini_netflix_backup')
 TUTORIAL = environ.get('TUTORIAL', '')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Filmymod_Support')
-P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'moviehidilg')
+P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
