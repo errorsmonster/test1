@@ -269,7 +269,7 @@ async def advantage_spoll_choker(bot, query):
                 if NO_RESULTS_MSG:
                     await bot.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, movie)))
                 btn = [[
-                    InlineKeyboardButton("🔰 𝗠𝗼𝘃𝗶𝗲 𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝗧𝗼 𝗔𝗱𝗺𝗶𝗻 🔰", url=f"https://t.me/moviehidilg")
+                    InlineKeyboardButton("🔰 𝗠𝗼𝘃𝗶𝗲 𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝗧𝗼 𝗔𝗱𝗺𝗶𝗻 🔰", url=f"https://t.me/updates_rrr")
                 ]]
                 k = await query.message.edit(script.MVE_NT_FND, reply_markup=InlineKeyboardMarkup(btn))
                 await asyncio.sleep(10)
@@ -1704,7 +1704,7 @@ async def auto_filter(client, msg, spoll=False):
             btn = [[
                     InlineKeyboardButton(f"Searching  🔍  for  '{search}'", callback_data=f"close_data")
                   ]]
-            m=await message.reply_sticker('CAACAgUAAxkBAAIBYmOkbpQ0brb4z4ggbPv4peTgcDb-AAIlBQACSr5ZVk64AdT0N9vYHgQ', reply_markup=InlineKeyboardMarkup(btn))
+            m=await message.reply_sticker('CAACAgUAAxkBAAEKKHhk7bImGic7pq7p_YeVxn0YtRFDQgACBAADwSQxMYnlHW4Ls8gQMAQ', reply_markup=InlineKeyboardMarkup(btn))
             search = search.lower()
             find = search.split(" ")
             search = ""
@@ -1736,7 +1736,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [[
                 InlineKeyboardButton(f"Searching  🔍  for  '{search}'", callback_data=f"close_data")
               ]]
-        m=await message.reply_sticker('CAACAgUAAxkBAAIBYmOkbpQ0brb4z4ggbPv4peTgcDb-AAIlBQACSr5ZVk64AdT0N9vYHgQ', reply_markup=InlineKeyboardMarkup(btn))
+        m=await message.reply_sticker('CAACAgUAAxkBAAEKKHhk7bImGic7pq7p_YeVxn0YtRFDQgACBAADwSQxMYnlHW4Ls8gQMAQ', reply_markup=InlineKeyboardMarkup(btn))
         settings = await get_settings(message.chat.id)
         await msg.message.delete()
     pre = 'filep' if settings['file_secure'] else 'file'
