@@ -1420,7 +1420,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "source":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='about'),
-            InlineKeyboardButton('✪ Cᴏɴᴛᴀᴄᴛ', url='https://t.me/Filmymod7')
+            InlineKeyboardButton('✪ Cᴏɴᴛᴀᴄᴛ', url='https://t.me/Sultankaif')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -1592,7 +1592,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "shortlink_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="https://t.me/Filmymod7")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="https://t.me/Sultankaif")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
