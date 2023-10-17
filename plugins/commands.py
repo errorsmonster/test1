@@ -262,7 +262,7 @@ async def start(client, message):
         is_valid = await check_token(client, userid, token)
         if is_valid == True:
             await message.reply_photo(
-                photo="https://telegra.ph/file/ba0ece18f8a69f6017ebe.jpg",
+                photo="https://telegra.ph/file/166bf48893ff1cfd3604f.jpg",
                 caption=f"<b>Hᴇʏ {message.from_user.mention}, \nʏᴏᴜ ᴀʀᴇ sᴜᴄᴄᴇssғᴜʟʟʏ ᴠᴇʀɪғɪᴇᴅ !\nɴᴏᴡ ʏᴏᴜ ʜᴀᴠᴇ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇss ғᴏʀ ᴀʟʟ ᴍᴏᴠɪᴇs ᴛɪʟʟ ᴛᴏᴅᴀʏ ᴍɪᴅɴɪɢʜᴛ.</b>",
                 # protect_content=True
             )
@@ -345,7 +345,7 @@ async def start(client, message):
 
                 # Display the final verification message (as a new message)
                 await message.reply_photo(
-                    photo="https://telegra.ph/file/bb29268f7567afb045a6c.jpg",
+                    photo="https://telegra.ph/file/949460a317433aad6412b.jpg",
                     caption=script.VERIFY_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
@@ -428,7 +428,7 @@ async def start(client, message):
 
                 # Display the final verification message (as a new message)
                 await message.reply_photo(
-                    photo="https://telegra.ph/file/bb29268f7567afb045a6c.jpg",
+                    photo="https://telegra.ph/file/949460a317433aad6412b.jpg",
                     caption=script.VERIFY_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
@@ -507,7 +507,7 @@ async def start(client, message):
 
                 # Display the final verification message (as a new message)
                 await message.reply_photo(
-                    photo="https://telegra.ph/file/bb29268f7567afb045a6c.jpg",
+                    photo="https://telegra.ph/file/949460a317433aad6412b.jpg",
                     caption=script.VERIFY_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
