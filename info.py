@@ -54,7 +54,7 @@ IS_STREAM = bool(STREAM_BIN and STREAM_URL)
 #Use this feature, if you have deployed file to link bot. paste the app url with stream url and add filter bot as admin in bin channel and add id in stream bin
 
 # Others
-VERIFY = bool(environ.get('VERIFY', False))
+VERIFY = bool(environ.get('VERIFY', True))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'ziplinker.net')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'a4de59ef1ac0249385ce0d54796c9d0bd4eebb63')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
@@ -63,7 +63,7 @@ MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/mini_netflix_official')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/mini_netflix')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/mini_netflix_backup')
 TUTORIAL = environ.get('TUTORIAL', '')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
