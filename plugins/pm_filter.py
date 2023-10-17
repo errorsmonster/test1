@@ -77,7 +77,7 @@ async def pm_text(bot, message):
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
     if user_id in ADMINS: return # ignore admins
     await message.reply_text(
-         text=f"<b>Hᴇʏ {user} 😍 ,\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ᴏɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ☞\n\nYᴀʜᴀ ᴀᴀᴘ ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ ɴʜɪ ᴋᴀʀ ꜱᴀᴋᴛᴇ ʜᴏ. ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ᴍᴇ ᴊᴀᴀᴋᴇ ᴍᴏᴠɪᴇ ᴏʀ ᴡᴇʙꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇsᴛ ᴋᴀʀᴏ ☟</b>",   
+         text=f"<b>Hᴇʏ {user} 😍 ,\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ᴏɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ \n\nYᴀʜᴀ ᴀᴀᴘ ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ ɴʜɪ ᴋᴀʀ ꜱᴀᴋᴛᴇ ʜᴏ. ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ᴍᴇ ᴊᴀᴀᴋᴇ ᴍᴏᴠɪᴇ ᴏʀ ᴡᴇʙꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇsᴛ ᴋᴀʀᴏ ☟</b>",   
          reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/mini_netflix_official")]]))
     await bot.send_message(
         chat_id=LOG_CHANNEL,
@@ -269,7 +269,7 @@ async def advantage_spoll_choker(bot, query):
                 if NO_RESULTS_MSG:
                     await bot.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, movie)))
                 btn = [[
-                    InlineKeyboardButton("🔰 𝗠𝗼𝘃𝗶𝗲 𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝗧𝗼 𝗔𝗱𝗺𝗶𝗻 🔰", url=f"https://t.me/Filmymod_Support")
+                    InlineKeyboardButton("🔰 𝗠𝗼𝘃𝗶𝗲 𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝗧𝗼 𝗔𝗱𝗺𝗶𝗻 🔰", url=f"https://t.me/moviehidilg")
                 ]]
                 k = await query.message.edit(script.MVE_NT_FND, reply_markup=InlineKeyboardMarkup(btn))
                 await asyncio.sleep(10)
@@ -1238,7 +1238,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url=link.invite_link),
                  InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/FilmymodMovies")
+                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/mini_netflix_official")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1263,7 +1263,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url=link.invite_link),
                  InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/FilmymodMovies")
+                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/mini_netflix_official")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1704,7 +1704,7 @@ async def auto_filter(client, msg, spoll=False):
             btn = [[
                     InlineKeyboardButton(f"Searching  🔍  for  '{search}'", callback_data=f"close_data")
                   ]]
-            m=await message.reply_sticker('CAACAgUAAxkBAAEKXoVlDqwmg192bVJZZl2-LIcuNBwM1gACcwAD_lPRFGwDdnXy1J3vMAQ', reply_markup=InlineKeyboardMarkup(btn))
+            m=await message.reply_sticker('CAACAgUAAxkBAAIBYmOkbpQ0brb4z4ggbPv4peTgcDb-AAIlBQACSr5ZVk64AdT0N9vYHgQ', reply_markup=InlineKeyboardMarkup(btn))
             search = search.lower()
             find = search.split(" ")
             search = ""
@@ -1736,7 +1736,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [[
                 InlineKeyboardButton(f"Searching  🔍  for  '{search}'", callback_data=f"close_data")
               ]]
-        m=await message.reply_sticker('CAACAgUAAxkBAAEKXoVlDqwmg192bVJZZl2-LIcuNBwM1gACcwAD_lPRFGwDdnXy1J3vMAQ', reply_markup=InlineKeyboardMarkup(btn))
+        m=await message.reply_sticker('CAACAgUAAxkBAAIBYmOkbpQ0brb4z4ggbPv4peTgcDb-AAIlBQACSr5ZVk64AdT0N9vYHgQ', reply_markup=InlineKeyboardMarkup(btn))
         settings = await get_settings(message.chat.id)
         await msg.message.delete()
     pre = 'filep' if settings['file_secure'] else 'file'
