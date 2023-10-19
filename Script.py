@@ -216,7 +216,7 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """
- <b>💫 **<a href='https://t.me/mini_netflix_official'>{file_name}</a>
+ <b>💫 **<a href='https://t.me/mini_netflix_backup'>{file_caption}</a>
 
 JOIN : @Mini_netflix ⚡**</b>"""
 
