@@ -161,6 +161,18 @@ Nᴀᴍᴇ - {}"""
 
     TOP_ALRT_MSG = """♻️ 𝗖𝗵𝗲𝗰𝗸𝗶𝗻𝗴 𝗙𝗼𝗿 𝗠𝗼𝘃𝗶𝗲 𝗜𝗻 𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲...♻️"""
 
+    
+    DONATE_TXT = """<b>
+💝 Thanks for showing interest in Donation
+
+🎁 If you like our bot feel free to donate any amount 10Rs, 20Rs, 50Rs, 100Rs, etc
+
+❣️ Donations are really appreciated it helps in bot development
+
+👛 You can donate through UPI
+
+👉 UPI ID: <code>mohd-0411@paytm</code></b>"""
+    
     MELCOW_ENG = """<b>Hᴇʟʟᴏ {} 😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ ❤️</b>"""
 
     SHORTLINK_INFO = """
