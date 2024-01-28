@@ -529,19 +529,17 @@ async def start(client, message):
         protect_content=True if pre == 'filep' else False,
         reply_markup=(
             InlineKeyboardMarkup(
-          #      [
-          #          [
-          #              InlineKeyboardButton('⚡ Watch Online/ Fast Download ⚡', callback_data=f'gen_stream_link:{file_id}')                        
-          #          ],[
-          #              InlineKeyboardButton('🔰 𝙈𝙤𝙫𝙞𝙚 𝙎𝙚𝙖𝙧𝙘𝙝 𝙂𝙧𝙤𝙪𝙥 🔰', url=f'https://t.me/FilmymodMovies')
-          #          ]
-          #      ]
-          #  )
-          #  if IS_STREAM
-          #  else InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton('🔰 𝙈𝙤𝙫𝙞𝙚 𝙎𝙚𝙖𝙧𝙘𝙝 𝙂𝙧𝙤𝙪𝙥 🔰', url=f'https://t.me/mini_netflix_official')
+                        InlineKeyboardButton('⚡ Watch Online/ Fast Download ⚡', callback_data=f'gen_stream_link:{file_id}')                        
+                    ]
+                ]
+            )
+            if IS_STREAM
+            else InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton('🔰 𝙈𝙤𝙫𝙞𝙚 𝙎𝙚𝙖𝙧𝙘𝙝 𝙂𝙧𝙤𝙪𝙥 🔰', url=f'https://t.me/FilmymodMovies')
                     ]
                 ]
             )
